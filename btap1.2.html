@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu Khảo Sát</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            border: 1px solid black;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            text-align: left;
+            width: 30%;
+        }
+        input, select {
+            width: 100%;
+            padding: 5px;
+        }
+        input[type="color"] {
+            width: 40px;
+            height: 25px;
+        }
+        input[type="range"] {
+            width: 80%;
+        }
+        .buttons {
+            text-align: center;
+            padding: 10px;
+        }
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">PHIẾU KHẢO SÁT</h2>
+
+    <form>
+        <table>
+            <tr>
+                <th>Họ tên</th>
+                <td><input type="text" name="fullname" value="Minh Vũ"></td>
+            </tr>
+            <tr>
+                <th>Màu yêu thích</th>
+                <td><input type="color" name="favorite_color" value="#FF0000"></td>
+            </tr>
+            <tr>
+                <th>Ngày sinh</th>
+                <td><input type="text" name="dob" placeholder="dd/mm/yyyy"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="email" value="vupdm@itc.edu.vn"></td>
+            </tr>
+            <tr>
+                <th>Ngành nghề</th>
+                <td><input type="text" name="job" value="Giảng viên"></td>
+            </tr>
+            <tr>
+                <th>Website</th>
+                <td><input type="url" name="website" value="http://www.itc.edu.vn"></td>
+            </tr>
+            <tr>
+                <th>Con số yêu thích (1-9)</th>
+                <td><input type="number" name="favorite_number" min="1" max="9" value="8"></td>
+            </tr>
+            <tr>
+                <th>Thu nhập</th>
+                <td>
+                    <input type="range" name="income" min="100" max="1000" value="500">
+                    <br>
+                    100 (USD) &nbsp;&nbsp; 1000 (USD)
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    * tỉ giá <input type="number" name="exchange_rate" value="22500"> = 9000000
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="buttons">
+                    <button type="submit">Gửi đi</button>
+                    <button type="reset">Xóa hết</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
